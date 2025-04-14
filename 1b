@@ -1,0 +1,23 @@
+import java.io.*;
+class biggest
+{
+public static void main(String arg[])throws IOException
+{
+int a,b,c;
+BufferedReader dis=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the three values");
+a=Integer.parseInt(dis.readLine());
+b=Integer.parseInt(dis.readLine());
+c=Integer.parseInt(dis.readLine());
+if(a>b&a>c)
+{
+System.out.println("A is biggest");
+}
+else if(b>c)
+{
+System.out.println("b is bigget");
+}
+else
+{
+System.out.println("c is biggest");
+}}}
