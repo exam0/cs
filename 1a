@@ -1,0 +1,23 @@
+import java.io.*;
+class inputs
+{
+     public static void main(String[]args)throws Exception
+     {
+     BufferedReader dis=new BufferedReader(new InputStreamReader(System.in));
+     System.out.println("Enter the integer value:");
+     int a=Integer.parseInt(dis.readLine());
+     System.out.println("Enter the float value:");
+     float f=Float.parseFloat(dis.readLine());
+     System.out.println("Enter the Double value:");
+     double d=Double.parseDouble(dis.readLine());
+     System.out.println("Enter the String valuue:");
+     String s=dis.readLine();
+     System.out.println("Enter one character:");
+     String c=dis.readLine();
+     
+     System.out.println("the integer is"+a);
+     System.out.println("the float is"+f);
+     System.out.println("the double is"+d);
+     System.out.println("the String is"+s);
+     System.out.println("the character is"+c);
+}}
