@@ -1,0 +1,15 @@
+import java.io.*;
+class sumdo
+{
+public static void main(String arg[])
+{
+int i,n=123,sum=0;
+do
+{
+i=n%10;
+sum=sum=i;
+n=n/10;
+}
+while(n>0);
+System.out.println("Sum of Digit="+sum);
+}}
