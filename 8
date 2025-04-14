@@ -1,0 +1,33 @@
+import java.io.*;
+interface area
+{
+public void area(double base, double height);
+}
+class rectangle implements area
+{
+public void area(double base, double length)
+{
+System.out.println("Area of the Rectangle");
+double rec = length * base;
+System.out.println(rec);
+}
+}
+class triangle implements area
+{
+public void area(double base, double length)
+{
+System.out.println("Area of the Triangle");
+double tria= 0.5* length * base;
+System.out.println( tria);
+}
+}
+class multiple
+{
+public static void main(String arg[]) throws IOException
+{
+rectangle rt = new rectangle ();
+rt.area(10,5);
+triangle t = new triangle();
+t.area(15,2);
+}
+}

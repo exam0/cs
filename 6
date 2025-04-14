@@ -1,0 +1,23 @@
+import java.util.*;
+class demovector
+{
+public static void main(String arg[])
+{
+Vector<Object>v2=new Vector<>(5,3);
+System.out.println("Intial size of vector="+v2.size());
+System.out.println("Intial capacity of vector="+v2.capacity());
+v2.addElement(10);
+v2.addElement(20);
+v2.addElement(30);
+v2.addElement("jmc");
+v2.addElement('m');
+System.out.println("After Element inserting.size of vector="+v2.size());
+System.out.println("After Element inserting.capacity of vector="+v2.capacity());
+System.out.println("Vector Elements="+v2);
+v2.removeElement(20);
+v2.removeElement('M');
+System.out.println("vector Element="+v2);
+System.out.println("first Element of v2="+v2.firstElement());
+System.out.println("last Element of v2="+v2.lastElement());
+}
+}

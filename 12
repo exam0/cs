@@ -1,0 +1,25 @@
+import java.io.*;
+class filecopy
+{
+public static void main(String arg[]) throws Exception
+{
+try
+{
+int n=0;
+FileReader fr = new FileReader("./democons.java");
+FileWriter fw = new FileWriter("./democons.txt");
+while(( n=fr.read())!= -1)
+{
+fw.write(n);
+}
+System.out.println("File copied......");
+fr.close();
+fw.close();
+}
+catch(Exception e)
+{
+System.out.println("File not found"+e);
+}
+}
+}
+

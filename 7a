@@ -1,0 +1,41 @@
+class rect
+{
+int width,height;
+rect()
+{
+}
+rect(int w,int h)
+{
+width=w;
+height=h;
+}
+void area()
+{
+System.out.println("area of rectangle=");
+System.out.println(width*height);
+}
+}
+class rectangle1 extends rect
+{
+int depth;
+rectangle1(int w,int h,int d)
+{
+width=w;
+height=h;
+depth=d;
+}
+void volume()
+{
+System.out.println("Volume of rectangle=");
+System.out.println(width*height*depth);
+}
+}
+class single
+{
+public static void main(String args[])
+{
+rectangle1 r3=new rectangle1(10,20,30);
+r3.volume();
+r3.area();
+}
+}

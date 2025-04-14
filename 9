@@ -1,0 +1,28 @@
+import java.io.*;
+public class mark
+{
+int m1,m2,m3,m4,total;
+public mark()throws Exception
+{
+BufferedReader d=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("M1,M2,M3,M4");
+m1=Integer.parseInt(d.readLine());
+m2=Integer.parseInt(d.readLine());
+m3=Integer.parseInt(d.readLine());
+m4=Integer.parseInt(d.readLine());
+}
+public void calc()
+{
+total=m1+m2+m3+m4;
+System.out.println("Total :"+total);
+}}
+
+import jmc.mark;
+class student
+{
+public static void main(String a[])throws Exception
+{
+mark s1 = new mark();
+s1.call();
+}
+}

@@ -1,0 +1,30 @@
+class demoover
+{
+void area()
+{
+System.out.println("Method overloading");
+}
+void area(int a)
+{
+System.out.println("Area of Square="+(a*a));
+}
+void area(double a,double b)
+{
+System.out.println("Area of Rectangle="+(a*b));
+}
+double area(double a)
+{
+return(a*a*a);
+}
+}
+class overload
+{
+public static void main(String ar[])
+{
+demoover ob=new demoover();
+ob.area();
+ob.area(10);
+ob.area(5.5,7.5);
+System.out.println(ob.area(7.5));
+}
+}

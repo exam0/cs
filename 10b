@@ -1,0 +1,45 @@
+import java.io.*;
+class A implements Runnable
+{
+Thread t;
+A()
+{
+t = new Thread(this, " Demo Thread A");
+System.out.println(t);
+t.start();
+}
+public void run()
+{
+try
+{
+for (int i=0; i<5; i++)
+{
+System.out.println(" From A =" +i);
+Thread.sleep(1000);
+}
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
+class imprun
+{
+public static void main(String a[])
+{
+A ob = new A();
+try
+{
+for (int i=0; i<5; i++)
+{
+System.out.println(" From Main=" +i);
+Thread.sleep(1000);
+}
+}
+catch(Exception e)
+{
+System.out.println(e);
+}
+}
+}
