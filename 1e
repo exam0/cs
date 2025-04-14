@@ -1,0 +1,31 @@
+import java.io.*;
+class arithmetic
+{
+public static void main(String arg[])throws IOException
+{
+int a,b,c,op;
+BufferedReader dis=new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the a&b values:");
+a=Integer.parseInt(dis.readLine());
+b=Integer.parseInt(dis.readLine());
+System.out.println("1.Addition");
+System.out.println("2.substraction");
+System.out.println("Enter the choice:");
+op=Integer.parseInt(dis.readLine());
+switch (op)
+{
+case 1:
+{
+c=a+b;
+System.out.println("Addition="+c);
+break;
+}
+case 2:
+{
+c=a-b;
+System.out.println("Substraction="+c);
+break;
+}
+default:
+}}
+}
